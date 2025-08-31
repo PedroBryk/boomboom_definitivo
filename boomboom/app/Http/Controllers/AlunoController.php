@@ -16,7 +16,7 @@ class AlunoController extends Controller
     // Cadastra um novo aluno
     public function store(Request $request)
 {
-    // 1. Regras de validação
+    // 1. Regras de validaçã
     $regras = [
         'nome' => 'required|string|min:3|max:100',
         'email' => 'required|string|email|max:50|unique:aluno,email',
