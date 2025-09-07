@@ -19,10 +19,10 @@ class AlunoController extends Controller
     // 1. Regras de validaçã
     $regras = [
         'nome' => 'required|string|min:3|max:100',
-        'email' => 'required|string|email|max:50|unique:aluno,email',
+        'email' => 'required|string|email|max:50',
         'senha' => 'required|string|min:8|max:100',
         'telefone' => 'required|string|min:10|max:20',
-        'data_nascimento' => 'required|date',
+        'data_nascimento' => 'nullable|date'
     ];
 
     // 2. Mensagens de erro personalizadas
