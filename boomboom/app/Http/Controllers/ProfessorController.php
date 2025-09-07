@@ -45,7 +45,7 @@ class ProfessorController extends Controller
             'data_nascimento' => $request->data_nascimento,
         ]);
 
-        return response()->json($professor, 201); //professor, estamos retornando no formato json para testar no postman
+        return response()->json($professor, 201); //professor, estamos retornando no formato json para testar no postman!
     }
 
     // Mostra um professor específico
