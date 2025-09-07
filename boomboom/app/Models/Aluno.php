@@ -25,7 +25,7 @@ class Aluno extends Authenticatable
         'remember_token',
     ];
 
-    // Define que o campo de senha usado para autenticação é 'senha'
+    
     public function getAuthPassword()
     {
         return $this->senha;
